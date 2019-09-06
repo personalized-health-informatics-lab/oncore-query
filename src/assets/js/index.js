@@ -26,7 +26,7 @@ import '../css/index.css';
               { field: 'summaryReportType', title: 'Summary Report Type' },
               { field: 'comment', title: 'Comments' },
             ],
-            data: data.map(d => ({
+            data: data.map((d) => ({
               protocolNumber: d.PROTOCOL_NO,
               title: d.TITLE,
               status: d.STATUS,

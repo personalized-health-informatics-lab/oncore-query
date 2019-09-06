@@ -16,7 +16,7 @@ router.post('/', async (req, res, next) => {
     content = content.split(' ');
     const protocols = await Protocol.findAll({
       where: {
-        [Op.and]: content.map(c => ({ TITLE: { [Op.like]: `%${c}%` } }))
+        [Op.and]: content.map((c) => ({ TITLE: { [Op.like]: `%${c}%` } }))
         ,
       },
     });
