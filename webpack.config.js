@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -8,7 +8,7 @@ module.exports = {
     index: './src/assets/js/index.js',
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
