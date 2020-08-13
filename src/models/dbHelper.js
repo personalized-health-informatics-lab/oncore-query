@@ -4,7 +4,6 @@ const dbConfig = require('../../config/settings').db;
 const sequelize = new Sequelize(dbConfig.database, dbConfig.user, dbConfig.password, {
   host: dbConfig.host,
   dialect: dbConfig.dialect,
-  operatorsAliases: false,
 });
 
 const Protocol = sequelize.define('SMRS_PROTOCOL', {

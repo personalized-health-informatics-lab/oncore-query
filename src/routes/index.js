@@ -7,7 +7,7 @@ const Protocol = dbHelper.protocol;
 const { Op } = Sequelize;
 
 router.get('/', async (req, res) => {
-  res.render('index');
+  res.render('index', { layout: false });
 });
 
 router.post('/', async (req, res, next) => {

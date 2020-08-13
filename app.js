@@ -9,7 +9,7 @@ const index = require('./src/routes/index');
  * Template engine
  */
 app.use(express.static('dist'));
-app.engine('handlebars', exphbs({ defaultLayout: null }));
+app.engine('handlebars', exphbs());
 app.set('views', 'src/views/');
 app.set('view engine', 'handlebars');
 
